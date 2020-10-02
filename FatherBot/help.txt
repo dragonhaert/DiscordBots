@@ -1,5 +1,0 @@
-Here's my updated list of commands, son:
-!commands
-!hey dad
-!ping
-!say

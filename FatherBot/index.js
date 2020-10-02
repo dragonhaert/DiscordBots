@@ -10,7 +10,7 @@ client.on('message', message => {
 
     switch (command){
         case 'commands':
-            FileSystem.readFile('help.txt', (error,data) => {
+            FileSystem.readFile('commands.txt', (error,data) => {
                 if (error) throw error;
                 message.channel.send("```"+data.toString() +"```");
             });
@@ -21,9 +21,13 @@ client.on('message', message => {
         case 'hey':
             if (args[0] === 'dad') message.channel.send("Hey @" + message.author.tag + "! Are ya winning?");
             break;
+        case 'kick':
+            if (args[0] === 'me') return message.member.kick();
+            if (message.author.tag === 'DragonHaert#6797') message.mentions.members.first().kick();
+            message.delete();
         default:
     }
 
 })
 
-client.login('NzM1NzAyNjkzNzI0ODE1NDky.XxkeRA.ytL0HKPxOhAK7EGZvv5Sne9bI8M');
+client.login('');
