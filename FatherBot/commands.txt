@@ -1,5 +1,0 @@
-Try these commands, son:
-!commands
-!hey dad
-!ping
-!kick me
