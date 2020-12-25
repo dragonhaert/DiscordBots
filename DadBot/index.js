@@ -48,4 +48,4 @@ client.on('message', message => {
 
 })
 
-client.login('NzM1NzAyNjkzNzI0ODE1NDky.XxkGhg.qx0rFqOlxenYXHcz2eC8GZNDZQ4');
+client.login('');
